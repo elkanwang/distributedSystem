@@ -7,7 +7,6 @@ import (
 	"log"
 	"bytes"
 	"io/ioutil"
-	"fmt"
 )
 
 type ByKey []KeyValue
@@ -57,7 +56,7 @@ func doReduce(
 		for _, key := range keyValuePairs {
 			keys[key.Key] = true
 		}
-		fmt.Printf("%v\n", keys)
+
 		for key := range keys {
 			var values []string
 			for _, keyValue := range keyValuePairs {
