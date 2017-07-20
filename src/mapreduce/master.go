@@ -22,7 +22,7 @@ type Master struct {
 	workers []string   // each worker's UNIX-domain socket name -- its RPC address
 
 	// Per-task information
-	jobName string   // Name of currently executing job
+	jobName string   // Name of currently executing JOB
 	files   []string // Input files
 	nReduce int      // Number of reduce partitions
 
